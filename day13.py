@@ -165,7 +165,7 @@ arr = [1, 2, 3, 4, 5, 8, 7]
 def IsAscendingTwo(arr):
     for i in range(len(arr) - 1):
         if arr[i+1] < arr[i]:
-            return "Нет такого элмента"
-    return "Есть такой элемент"
+            return "Нет"
+    return "Да"
 
 print(IsAscendingTwo(arr))
