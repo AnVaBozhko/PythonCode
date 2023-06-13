@@ -142,25 +142,25 @@
 
 # 5. Алгоритм сортировки вставкой
 
-# arr = [64, 43, 25, 12, 22, 11, 90]
-# def insertion_search(arr):
-#     for i in range(1, len(arr)):
-#         key = arr[i]
-#         j = i - 1
-#         while j >= 0 and key < arr[j]:
-#             arr[j + 1] = arr[j]
-#             j -= 1
-#         arr[j + 1] = key
-#     return arr
+arr = [64, 43, 25, 12, 22, 11, 90]
+def insertion_search(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+    return arr
+
+print(insertion_search(arr))
 #
-# print(insertion_search(arr))
-#
-# arr = [64, 43, 25, 12, 22, 11, 90]
-# print(sorted(arr))
+arr = [64, 43, 25, 12, 22, 11, 90]
+print(sorted(arr))
 
 
-# arr = list(map(int, input().split()))
-# arr = [64, 43, 25, 12, 22, 11, 90]
+arr = list(map(int, input().split()))
+arr = [64, 43, 25, 12, 22, 11, 90]
 arr = [1, 2, 3, 4, 5, 8, 7]
 def IsAscending(arr):
     for i in range(len(arr) - 1):
