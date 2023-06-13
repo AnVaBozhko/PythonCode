@@ -162,10 +162,10 @@ print(sorted(arr))
 arr = list(map(int, input().split()))
 arr = [64, 43, 25, 12, 22, 11, 90]
 arr = [1, 2, 3, 4, 5, 8, 7]
-def IsAscending(arr):
+def IsAscendingOne(arr):
     for i in range(len(arr) - 1):
         if arr[i+1] < arr[i]:
-            return "NO"
-    return "YES"
+            return "Нет"
+    return "Да"
 
-print(IsAscending(arr))
+print(IsAscendingOne(arr))
